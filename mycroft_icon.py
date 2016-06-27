@@ -53,9 +53,11 @@ def on_message(ws, message):
         if message_type in("recognizer_loop:audio_output_end"):
             print ("QUESTION ICON")
             tray_icon.ind.set_from_stock(Gtk.STOCK_DIALOG_QUESTION)
-
+        """
         while Gtk.events_pending():
             Gtk.main_iteration()
+        """
+
     except:
         e = sys.exc_info()[0]
         print("on_message error:", e)
