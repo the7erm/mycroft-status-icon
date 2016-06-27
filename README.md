@@ -18,3 +18,6 @@ sudo apt-get install python-gtk2 libnotify-bin pip
 
 ## python requirements
 `pip install -r requirements.txt`
+
+## run
+`./mycroft_icon.py`
